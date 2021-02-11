@@ -12,7 +12,7 @@ class ProductList extends Component {
 
     return (
       <div>
-        <h3>Products</h3>
+        <h1 style={{color: 'red', fontWeight: 600, textAlign:'center', top: '50%', width: '20%', margin: 'auto', position: 'relative',  marginBottom: '12px', marginTop: '12px'}}>Products</h1>
         {products.map(product => (
           <ProductItem key={product.id} product={product} onAddToCartClicked={() => addToCart(product.id)} />
         ))}

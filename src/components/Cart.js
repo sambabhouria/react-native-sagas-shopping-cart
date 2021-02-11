@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Button } from "@chakra-ui/react"
+import { Heading } from "@chakra-ui/react"
+
 import CartItem from './CartItem'
 import { connect } from 'react-redux'
 import { checkout, removeFromCart } from '../actions'
@@ -29,7 +31,7 @@ class Cart extends Component {
 
     return (
       <div>
-        <h3>Your Cart</h3>
+        <Heading size="sm" fontSize="20px">Your Cart </Heading>
         <div>{nodes}</div>
         <p>Total: &#36;{total}</p>
         {/* <button onClick={checkout} disabled={checkoutAllowed ? '' : 'disabled'}>

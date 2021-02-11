@@ -5,12 +5,11 @@ import Cart from './Cart'
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <h2>Shopping Cart Example</h2>
-        <hr />
+      <div style={{display: 'flex'}}>
         <ProductList />
-        <hr />
+       <div style={{marginLeft : '400px',  marginTop: '50px'}}>
         <Cart />
+       </div>
       </div>
     )
   }
