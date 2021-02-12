@@ -31,7 +31,7 @@ class Cart extends Component {
 
     return (
       <div>
-        <Heading size="sm" fontSize="20px">Your Cart </Heading>
+        <Heading size="sm" fontSize="20px" colorScheme='gray'>Your Cart </Heading>
         <div>{nodes}</div>
         <p>Total: &#36;{total}</p>
         {/* <button onClick={checkout} disabled={checkoutAllowed ? '' : 'disabled'}>
